@@ -5,7 +5,7 @@ import requests
 import logging
 import hashlib
 
-tokens.configure(dir='./opt/app', url='https://auth.zalando.com/oauth2/access_token?realm=/services')
+tokens.configure(dir='./meta/credentials', url='https://auth.zalando.com/oauth2/access_token?realm=/services')
 tokens.manage('marauder', ['uid'])
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(message)s')
 
